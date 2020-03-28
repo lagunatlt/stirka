@@ -3,3 +3,55 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+	font-size: 16px;
+	font-family: 'Gotham Pro';
+}
+body {
+	max-width: 2000px;
+}
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+header {
+	padding-top: 200px;
+}
+.font-white {
+	color: #ffffff;
+}
+.font-black {
+	color: #000000;
+}
+.header__top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header__top-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo-wrap {
+	display: flex;
+	justify-content: flex-start;
+	width: 400px;
+}
+
+.header__top-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: self-end;
+}
+
+.header__bg {
+	background-image: url('../img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
