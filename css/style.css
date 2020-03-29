@@ -29,6 +29,9 @@ header {
 section {
 	padding: 60px 0;
 }
+.forminput {
+	display: none;
+}
 .font-white {
 	color: #ffffff;
 }
@@ -982,4 +985,60 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 90px 0;
+}
+
+/* ----------------- */
+
+/* Элемент | http://127.0.0.1:5500/index.html */
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form__input {
+	width: 250px;
+	height: 47px;
+	border: none;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	padding-left: 49px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.form {
+	position: relative;
+}
+.button__form {
+	padding: 16px 45px 18px 45px;
+	font-size: 17px;
+	border: none;
+}
+
+.form__modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 23px;
+}
+.form-main__title {
+	text-align: center;
+}
+
+p.form-main__title:nth-child(2) {
+	margin-bottom: 60px;
+}
+.fancybox-content {
+	padding: 50px 16px;
+	border-radius: 7px;
+}
+.error {
+	color: #c40000;
+}
+#phone1-error {
+	font-size: 11px;
+	position: absolute;
+	top: -17px;
+	font-weight: 400;
 }
