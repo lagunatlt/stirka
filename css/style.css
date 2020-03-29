@@ -41,7 +41,8 @@ section {
 	left: 0;
 	right: 0;
 	padding-top: 50px;
-	z-index: 1;
+	z-index: 11;
+	transition: all 0.3s;
 }
 
 .header__top-wrap {
@@ -113,6 +114,42 @@ section {
 	color: #ffffff;
 	border-bottom: 1px solid #ffffff;
 }
+
+/* --------------- */
+
+.fixed-top {
+	height: 70px;
+	padding-top: 3px;
+	background-color: #25292c;
+	box-shadow: 0 0 10px #000000;
+}
+
+.fixed-top .header__top-phone::before,
+.fixed-top .footer__phone::before {
+	top: calc(50% - 13px);
+	left: -43px;
+	width: 23px;
+	height: 23px;
+	background-size: 22px;
+}
+
+.fixed-top .header__top-logo {
+	width: 190px;
+}
+
+.fixed-top .header__top-desc {
+	font-size: 1.000em;
+}
+
+.fixed-top .header__top-phone {
+	padding-bottom: 3px;
+}
+
+.fixed-top .header__top-link {
+	padding-bottom: 7px;
+}
+
+/* --------------- */
 .header__bg {
 	background-image: url('../img/header-bg.jpg');
 	background-repeat: no-repeat;
@@ -209,6 +246,7 @@ h1 {
 	background-color: #297FCA;
 	border-radius: 41px;
 	cursor: pointer;
+	transition: all 0.2s;
 }
 .button::before {
 	position: absolute;
@@ -220,6 +258,19 @@ h1 {
 	-webkit-box-shadow: inset 0px 0px 3px 1px #FFFFFF8A;
 	box-shadow: inset 0px 0px 3px 1px #FFFFFF8A;
 	border-radius: 41px;
+	transition: all 0.2s;
+}
+.button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 4px #297fca;
+}
+.button:active {
+	transform: translateY(0);
+	box-shadow: none
+}
+.button:hover::before {
+	-webkit-box-shadow: inset 0px 0px 12px 7px #FFFFFF3B;
+	box-shadow: inset 0px 0px 12px 7px #FFFFFF3B;
 }
 .header__top-button {
 	margin-bottom: 15px;
@@ -612,9 +663,32 @@ h2 {
 
 /* ----------- */
 .what-bg {
+	position: relative;
 	background-image: url('../img/what-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.what-bg::before {
+	position: absolute;
+	top: calc(50% - 325.5px);
+	left: 0;
+	content: '';
+	width: 474px;
+	height: 651px;
+	background-image: url('../img/what-l.png');
+	background-repeat: no-repeat;
+	background-size: 474px;
+}
+.what-bg::after {
+	position: absolute;
+	top: calc(50% - 349px);
+	right: 0;
+	content: '';
+	width: 459px;
+	height: 698px;
+	background-image: url('../img/what-r.png');
+	background-repeat: no-repeat;
+	background-size: 459px;
 }
 .what__items {
 	display: flex;
@@ -636,6 +710,12 @@ h2 {
 	background-color: #ffffff;
 	color: #000;
 	border-radius: 7px;
+	user-select: none;
+	transition: all 0.2s;
+}
+.what-item:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 15px #ffffff9e;
 }
 .what-item__title {
 	font-size: 26px;
