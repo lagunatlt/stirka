@@ -1,3 +1,5 @@
+AOS.init();
+/* ----------------- */
 $(document).ready(function ($) {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 20) {
@@ -115,7 +117,13 @@ $('button[type="submit"]').click(function () {
 });
 /* ------------------- */
 $(function () {
-	$("#beforeafter").twentytwenty();
+	$("#carpet").twentytwenty();
+});
+$(function () {
+	$("#shirt").twentytwenty();
+});
+$(function () {
+	$("#jeans").twentytwenty();
 });
 // $(function () {
 // 	$(".twentytwenty-container").twentytwenty();

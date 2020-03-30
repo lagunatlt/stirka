@@ -1,3 +1,13 @@
+@media (max-width: 1440px) {
+	.before-bg::before {
+		opacity: 0.8;
+	}
+
+	.before-bg::after {
+		opacity: 0.8;
+	}
+}
+
 @media (max-width: 1366px) {
 	.container {
 		max-width: 1140px;
@@ -38,9 +48,9 @@
 		margin-left: 30px;
 	}
 
-	.button {
+	/* .button {
 		padding: 27px 65px;
-	}
+	} */
 	.button__form {
 		padding: 16px 45px 18px 45px;
 	}
@@ -102,6 +112,14 @@
 @media (max-width: 1280px) {
 	.container {
 		max-width: 960px;
+	}
+
+	.before-ap {
+		left: 115px;
+	}
+
+	.after-ab {
+		right: 121px;
 	}
 
 	.header__top-logo,
@@ -220,10 +238,9 @@
 		margin-bottom: 20px;
 	}
 
-	/* .stage__main-l ul::before {
-		top: calc(50% - 130px);
-		height: 270px;
-	} */
+	.header__top-button {
+		padding: 26px 65px;
+	}
 
 	.wash-item {
 		width: 280px;
@@ -436,6 +453,30 @@
 	footer .container {
 		max-width: 100%;
 	}
+
+	.before-ap {
+		top: 354px;
+		font-size: 26px;
+	}
+
+	.after-ab {
+		top: 354px;
+		font-size: 26px;
+	}
+
+	.jeans__wrap {
+		left: 354px;
+	}
+
+	.before-ap {
+		left: 39px;
+	}
+
+	.after-ab {
+		right: 18px;
+	}
+
+
 }
 
 @media (max-width: 800px) {
@@ -487,6 +528,9 @@
 		margin-bottom: 46px;
 		font-size: 2.250em;
 	}
+	.header__top-button {
+		padding: 18px 33px;
+	}
 
 	.why-bg::before {
 		left: 0px;
@@ -522,9 +566,9 @@
 		height: 60px;
 	}
 
-	.button {
+	/* .button {
 		padding: 17px 35px;
-	}
+	} */
 
 	.why-button {
 		padding-left: 87px;
@@ -591,16 +635,60 @@
 		top: 900px;
 	}
 
+		.before-ap {
+			top: 331px;
+		}
+
+		.after-ab {
+			top: 331px;
+		}
+	
+	.shirt__wrap>div:nth-child(1) {
+		left: 23px;
+	}
 
 }
 @media (max-width: 720px) {
 	.container {
 		max-width: 540px;
 	}
-	/* .stage__main-l ul::before {
-		top: calc(50% - 155.5px);
-		height: 311px;
-	} */
+		.before-ap {
+			top: 269px;
+		}
+
+		.after-ab {
+			top: 269px;
+		}
+
+		.shirt__wrap>div:nth-child(1) {
+			left: 0;
+			margin-bottom: 50px;
+		}
+
+		.before-ap {
+			left: 21px;
+		}
+
+		.jeans__wrap {
+			left: 0;
+		}
+
+	.shirt__wrap>div:nth-child(1) {
+		position: relative;
+	}
+
+	.jeans__wrap {
+		position: relative;
+	}
+
+	.before__wrapper {
+		width: 314px;
+	}
+
+	.before-bg {
+		height: 1038px;
+	}
+
 }
 @media (max-width: 540px) {
 	.container {
@@ -711,6 +799,15 @@
 		background-color: #ffffffb0;
 	}
 
+	.before-ap {
+		top: 264px;
+	}
+
+	.after-ab {
+		top: 264px;
+	}
+
+
 }
 @media (max-width: 480px) {
 
@@ -756,13 +853,14 @@
 		padding-top: 14vh;
 	}
 
-	.button {
-		padding: 13px 20px;
-	}
 
 	.header__top-button {
 		width: 271px;
 		height: 57px;
+		padding: 18px 20px;
+	}
+	.why-button {
+		padding-left: 65px;
 	}
 
 	.header__main-left {
@@ -833,6 +931,60 @@
 		font-size: 15px;
 	}
 
+	.before-ap {
+		top: 242px;
+	}
 
+	.after-ab {
+		top: 242px;
+	}
+	.why-button::after {
+		display: none;
+	}
+
+
+
+}
+@media (max-width: 380px) {
+
+	.before-ap {
+		top: 205px;
+	}
+
+	.after-ab {
+		top: 205px;
+	}
+
+
+}
+@media (max-width: 320px) {
+
+	.before-ap {
+		top: 185px;
+	}
+
+	.after-ab {
+		top: 185px;
+	}
+
+	.before-ap {
+		left: 3px;
+	}
+
+	.shirt__wrap>div:nth-child(1) {
+		width: 288px;
+	}
+
+	.jeans__wrap {
+		width: 288px;
+	}
+
+	.after-ab {
+		right: 3px;
+	}
+	.why-button,
+	.wash-button {
+		padding: 15px 65px;
+	}
 
 }
