@@ -322,7 +322,3 @@
     for (var e = ["changedTouches", "targetTouches"], n = e.length; n--;) - 1 === t.event.props.indexOf(e[n]) && t.event.props.push(e[n])
   }(t)
 });
-
-// $(window).load(function () {
-//   $("#beforeafter").twentytwenty();
-// });
