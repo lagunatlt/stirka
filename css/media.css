@@ -741,9 +741,9 @@
 		padding: 40px 0;
 	}
 
-	html {
+	/* html {
 		font-size: 13px;
-	}
+	} */
 
 	.what-item {
 		width: 260px;
@@ -945,6 +945,12 @@
 
 
 }
+@media (max-width: 400px) {
+	.why-button,
+	.wash-button {
+		padding: 15px 65px;
+	}
+}
 @media (max-width: 380px) {
 
 	.before-ap {
@@ -982,9 +988,6 @@
 	.after-ab {
 		right: 3px;
 	}
-	.why-button,
-	.wash-button {
-		padding: 15px 65px;
-	}
+	
 
 }
