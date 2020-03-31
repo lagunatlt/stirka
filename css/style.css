@@ -1056,7 +1056,7 @@ footer {
 	position: relative;
 }
 .button__form {
-	padding: 16px 45px 18px 45px;
+	padding: 11px 45px 16px 45px;
 	font-size: 1.063em;
 	border: none;
 }
@@ -1085,7 +1085,7 @@ p.form-main__title:nth-child(2) {
 #phone1-error {
 	font-size: 11px;
 	position: absolute;
-	top: -17px;
+	top: -22px;
 	font-weight: 400;
 }
 .twentytwenty-overlay:hover {
