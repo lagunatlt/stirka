@@ -73,6 +73,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 
 });
+
 /* ----------- */
 $('button[type="submit"]').click(function () {
 	// console.log('hi')
